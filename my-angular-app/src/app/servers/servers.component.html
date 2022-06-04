@@ -1,0 +1,17 @@
+<app-server></app-server>
+<label>Server Name</label>
+<!-- <input type="text"
+class="form-control"
+(input)="updateServerName($event)"> -->
+<input type="text"
+class="form-control"
+ [(ngModel)]="serverName">
+
+<!-- <p></p>
+<p>{{serverName}}</p> -->
+<p>{{serverStatus}}</p>
+<button class="btn btn-primary" 
+[disabled]="!allowServer"
+(click)="onServerMessage()">Add Server</button>
+
+<!-- <h2>Hello India Namaskar</h2> -->
